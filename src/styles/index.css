@@ -170,10 +170,6 @@ a > code::before {
 	border-radius: var(--border-radius);
 }
 
-a:hover,
-a:focus {
-	text-decoration: underline;
-}
 
 a:focus {
 	outline: 2px solid currentColor;
@@ -343,7 +339,6 @@ h2.heading {
 .header-link:hover a,
 .header-link a:focus {
 	color: var(--theme-text);
-	text-decoration: underline;
 }
 .header-link svg {
 	opacity: 0.6;
