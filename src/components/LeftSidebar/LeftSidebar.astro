@@ -20,13 +20,13 @@ const sidebar = SIDEBAR[langCode];
 			Object.entries(sidebar).map(([header, children]) => (
 				<li>
 					<div class="nav-group">
-						<h4 class="font-semibold">{header}</h4>
+						<h4 class="font-semibold mb-3">{header}</h4>
 						<ul>
 							{children.map((child) => {
 								const url = Astro.site?.pathname + child.link;
 								return (
-									<li class="p-2">
-										<a class="hover:border-gray-50 border-l-2 p-2 text-gray-900 border-transparent dark:text-gray-50" href={url} aria-current={currentPageMatch === child.link ? 'page' : false}>
+									<li class="py-2 mb-[2px]">
+										<a class="hover:dark:border-gray-50 hover:border-gray-900 border-l-[1px] dark:border-slate-800 border-slate-300 p-2 text-gray-900 border-transparent dark:text-gray-50 hover:no-underline" href={url} aria-current={currentPageMatch === child.link ? 'page' : false}>
 											{child.text}
 										</a>
 									</li>
