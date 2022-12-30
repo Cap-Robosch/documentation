@@ -45,7 +45,7 @@ export default function Search() {
 
 	return (
 		<>
-			<button type="button" ref={searchButtonRef} onClick={onOpen} className="search-input">
+			<button type="button" ref={searchButtonRef} onClick={onOpen} className="flex w-full px-5 py-2 dark:bg-slate-800 bg-slate-200">
 				<svg width="24" height="24" fill="none">
 					<path
 						d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
@@ -53,17 +53,18 @@ export default function Search() {
 						strokeWidth="2"
 						strokeLinecap="round"
 						strokeLinejoin="round"
+						className='text-slate-500'
 					/>
 				</svg>
 
-				<span>Search</span>
+				<span className='text-slate-500 '>Search</span>
 
-				<span className="search-hint">
+				<span className="text-slate-500">
 					<span className="sr-only">Press </span>
 
 					<kbd>/</kbd>
 
-					<span className="sr-only"> to search</span>
+					<span className="text-slate-500"> to search</span>
 				</span>
 			</button>
 
@@ -78,8 +79,6 @@ export default function Search() {
 						apiKey={ALGOLIA.apiKey}
 						transformItems={(items) => {
 							return items.map((item) => {
-								// We transform the absolute URL into a relative URL to
-								// work better on localhost, preview URLS.
 								const a = document.createElement('a');
 								a.href = item.url;
 								const hash = a.hash === '#overview' ? '' : a.hash;
