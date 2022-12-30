@@ -53,7 +53,7 @@ const ThemeToggle: FunctionalComponent = () => {
 	}, [theme]);
 
 	return (
-		<div className="theme-toggle">
+		<div className="dark:bg-slate-800 bg-slate-200 p-2 flex rounded-full gap-3 theme-toggle">
 			{themes.map((t, i) => {
 				const icon = icons[i];
 				const checked = t === theme;
