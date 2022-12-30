@@ -1,5 +1,5 @@
 export const SITE = {
-	title: 'Documentation',
+	title: 'Robosch Documentation',
 	description: 'Your website description.',
 	defaultLanguage: 'en_US',
 };
