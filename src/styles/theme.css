@@ -34,7 +34,6 @@
    * define different variants.
    *
    */
-
 	--color-gray-5: var(--color-base-gray), 5%;
 	--color-gray-10: var(--color-base-gray), 10%;
 	--color-gray-20: var(--color-base-gray), 20%;
@@ -66,7 +65,7 @@
 	--theme-text-light: hsla(var(--color-gray-40), 1);
 	/* @@@: not used anywhere */
 	--theme-text-lighter: hsla(var(--color-gray-80), 1);
-	--theme-bg: hsla(var(--color-base-white), 100%, 1);
+	--theme-bg: #F8FAFC;
 	--theme-bg-hover: hsla(var(--color-gray-95), 1);
 	--theme-bg-offset: hsla(var(--color-gray-90), 1);
 	--theme-bg-accent: hsla(var(--color-blue), var(--theme-accent-opacity));
@@ -96,7 +95,7 @@ body {
 
 	/* @@@: not used anywhere */
 	--theme-text-lighter: hsla(var(--color-gray-40), 1);
-	--theme-bg: hsla(215, 28%, 17%, 1);
+	--theme-bg: #0f172a;
 	--theme-bg-hover: hsla(var(--color-gray-40), 1);
 	--theme-bg-offset: hsla(var(--color-gray-5), 1);
 	--theme-code-inline-bg: hsla(var(--color-gray-10), 1);
@@ -121,5 +120,5 @@ body {
 
 ::selection {
 	color: var(--theme-selection-color);
-	background-color: var(--theme-selection-bg);
+	background-color: #101;
 }
