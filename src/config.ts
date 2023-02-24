@@ -1,7 +1,7 @@
 export const SITE = {
 	title: 'Robosch Documentation',
 	description: 'Your website description.',
-	defaultLanguage: 'en_US',
+	defaultLanguage: 'pt_BR',
 };
 
 export const OPEN_GRAPH = {
@@ -26,7 +26,7 @@ export type Frontmatter = {
 };
 
 export const KNOWN_LANGUAGES = {
-	English: 'en',
+	Portugues: 'pt',
 } as const;
 export const KNOWN_LANGUAGE_CODES = Object.values(KNOWN_LANGUAGES);
 
@@ -46,12 +46,18 @@ export type Sidebar = Record<
 	Record<string, { text: string; link: string }[]>
 >;
 export const SIDEBAR: Sidebar = {
-	en: {
-		'Style Pattern': [
-			{ text: 'Introduction', link: 'en/introduction' },
-			{ text: 'Page 2', link: 'en/page-2' },
-			{ text: 'Page 3', link: 'en/page-3' },
+	pt: {
+		'General': [
+			{ text: 'Introduction', link: 'pt/introduction' },
 		],
-		'Another Section': [{ text: 'Page 4', link: 'en/page-4' }],
+		'Another Section': [
+			{ text: 'Page 4', link: 'pt/page-4' }
+		],
+		'Style pattern': [
+			{ text: 'Introduction', link: 'pt/introduction' },
+			{ text: 'Page 2', link: 'pt/page-2' },
+			{ text: 'Page 3', link: 'pt/page-3' },
+			{ text: 'Page 5', link: 'pt/page-5' },
+		],
 	},
 };
